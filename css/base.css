@@ -1,14 +1,26 @@
 :root {
-    --anthra: #121212;
-    --anthra-dark: #0d0d0d;
-    --gold: #e0b858;
-    --gold-light: #f1cd7c;
-    --link-gold: #e0b858; /* → oder ein anderer Wert, falls du was anderes willst */
-    --text-light: #f5f5f5;
-    --text-dark: #1a1a1a;
+    --gold: #d6a84f;
+    --gold-light: #f5d890;
+    --anthra-dark: #0e0f0e;
+    --brown-medium: #3b2e1e;
+    --beige-soft: #8c7040;
+    --brown-frame: #2a2116;
+    --text-light: #f8f8f8;
 }
 
-*, *::before, *::after {
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--anthra-dark);
+    color: var(--text-light);
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

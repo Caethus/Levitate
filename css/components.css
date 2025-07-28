@@ -24,6 +24,122 @@ header h1:hover {
         0 0 12px var(--gold-light);
 }
 
+/* === Hero-Logo Rund + Glow (wie vorher) === */
+.hero-logo {
+    width: 180px;
+    max-width: 80%;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(26, 24, 22, 0.9);
+    padding: 0.5rem;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.3), 0 0 16px rgba(255, 215, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+}
+
+.hero-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.6), 0 0 24px rgba(255, 215, 0, 0.4);
+}
+
+/* === Allgemeine Fade-in Animation für Hero-Elemente === */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+}
+
+.delay-3 {
+    animation-delay: 0.9s;
+}
+
+.delay-4 {
+    animation-delay: 1.2s;
+}
+
+.delay-5 {
+    animation-delay: 1.5s;
+}
+
+.delay-6 {
+    animation-delay: 1.8s;
+}
+
+.delay-7 {
+    animation-delay: 2.1s;
+}
+
+.glow-line {
+    position: relative;
+    width: 60%;
+    height: 2px;
+    margin: 2rem auto 1rem auto;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    border: none;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    overflow: hidden;
+}
+
+.glow-line::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -30%;
+    width: 30%;
+    height: 6px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+    transform: skewX(-25deg);
+    animation: shimmer-glow 2.5s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes shimmer-glow {
+    0% {
+        left: -30%;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        left: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+
+.delay-8 {
+    animation-delay: 2.4s;
+}
 
 
 
@@ -40,15 +156,15 @@ nav a.active {
     padding: 0.4rem 1rem;
     box-shadow: 0 0 6px var(--gold), 0 0 10px var(--gold-light), 0 0 16px var(--gold);
     animation: fire-glow 1.8s ease-in-out infinite alternate;
-  
+
     /* Heller Text-Rahmen */
     text-shadow:
-    0 0 2px white,
-    0 0 3px white;
+        0 0 2px white,
+        0 0 3px white;
 
-  }
-  
-  
+}
+
+
 
 /* -------------------- MOBILE MENÜ MIT L -------------------- */
 .icon-bars {
