@@ -33,3 +33,35 @@ Levitate/
 └── assets/
     └── images/
         └── favicon.png
+🎯 Features
+Responsive Design (Desktop & Mobil)
+
+Glow-Effekte & animiertes Menü
+
+Hero-Sektion für die Startseite
+
+Bewerbungsformular
+
+Gildeninformationen & Raidübersicht
+
+Favicon basierend auf dem Gildenlogo
+
+🚀 Technologien
+HTML5
+
+CSS3 (modularisiert)
+
+Vanilla JavaScript
+
+Git & GitHub Pages
+
+🧙‍♂️ Entwickler
+Dieses Projekt wurde mit ❤️ von Caethus (Bastian) gebaut.
+Aktuell in Umschulung zum Fachinformatiker für Anwendungsentwicklung.
+
+📬 Kontakt
+Bei Fragen, Vorschlägen oder Raidanfragen:
+📧 Kontaktseite aufrufen
+
+⚠️ Lizenz
+Dieses Projekt ist rein privat und nicht kommerziell. Alle verwendeten Grafiken gehören der Gilde bzw. Blizzard Entertainment.
