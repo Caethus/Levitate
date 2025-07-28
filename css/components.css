@@ -1,0 +1,113 @@
+header h1 {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    color: var(--gold);
+
+    text-shadow:
+        0 0 1px white,
+        0 0 2px var(--gold-light),
+        0 0 4px var(--gold);
+
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+header h1:hover {
+    text-shadow:
+        0 0 2px white,
+        0 0 4px var(--gold-light),
+        0 0 8px var(--gold),
+        0 0 12px var(--gold-light);
+}
+
+
+
+
+/* -------------------- NAVIGATION -------------------- */
+nav {
+    margin-top: 1rem;
+}
+
+nav a.active {
+    background-color: var(--gold);
+    color: var(--anthra-dark);
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    box-shadow: 0 0 6px var(--gold), 0 0 10px var(--gold-light), 0 0 16px var(--gold);
+    animation: fire-glow 1.8s ease-in-out infinite alternate;
+  
+    /* Heller Text-Rahmen */
+    text-shadow:
+    0 0 2px white,
+    0 0 3px white;
+
+  }
+  
+  
+
+/* -------------------- MOBILE MENÜ MIT L -------------------- */
+.icon-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 30px;
+}
+
+.icon-bars span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--gold);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 4px var(--gold);
+}
+
+.icon-l {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    line-height: 1;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-top: 3.5rem;
+        /* Platz für Menü-Button */
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        top: 1rem;
+        width: 100%;
+        padding: 0 2rem;
+        white-space: normal;
+        line-height: 1.3;
+    }
+
+    .menu-toggle {
+        top: 1rem;
+        left: 1rem;
+        z-index: 1200;
+    }
+}
+
+@media (min-width: 769px) {
+    header h1 {
+        position: static;
+        transform: none;
+        margin: 0;
+        text-align: center;
+        pointer-events: auto;
+    }
+}
